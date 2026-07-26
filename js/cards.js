@@ -1,12 +1,11 @@
-import anime from "https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.es.js";
+import { animate, stagger } from "https://cdn.jsdelivr.net/npm/animejs@4/+esm";
 
 export function initCardsAnim() {
-  anime({
-    target:".card", 
+  animate(".card", {
     opacity: [0, 1],
     translateY: [24, 0],
-    delay: anime.stagger(120),
+    delay: stagger(120),
     duration: 700,
-    easing: "easeOutBack",
+    ease: "outBack",
   });
 }

@@ -25,7 +25,8 @@
 把 `index.html` 底部前两行 `<script>` 调换：
 
 ```html
-<script src="js/cards.js"></script>  <!-- cards 跑的时候 anime 还没加载 -->
+<script src="js/cards.js"></script>
+<!-- cards 跑的时候 anime 还没加载 -->
 <script src="https://cdn.jsdelivr.net/npm/animejs@4/lib/anime.iife.min.js"></script>
 <script src="js/score.js"></script>
 <script src="js/nav.js"></script>
@@ -71,7 +72,10 @@ export function initCardsAnim() {
 把 `js/score.js` 的内容**整个替换**成：
 
 ```javascript
-import { animate, scrambleText } from "https://cdn.jsdelivr.net/npm/animejs@4/+esm";
+import {
+  animate,
+  scrambleText,
+} from "https://cdn.jsdelivr.net/npm/animejs@4/+esm";
 
 export function initScoreAnim() {
   var btn = document.querySelector(".primary-button");
