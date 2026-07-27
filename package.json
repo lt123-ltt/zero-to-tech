@@ -21,9 +21,11 @@
   },
   "homepage": "https://github.com/lt123-ltt/zero-to-tech#readme",
   "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.4",
     "vite": "^8.1.5"
   },
   "dependencies": {
-    "animejs": "^4.5.0"
+    "animejs": "^4.5.0",
+    "react-dom": "^19.2.8"
   }
 }
