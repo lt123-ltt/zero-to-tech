@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+dist
+
+Out-File -FilePath .gitignore -Encoding utf8
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# 依赖和构建
+node_modules
+dist
